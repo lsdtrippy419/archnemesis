@@ -1,0 +1,10 @@
+^C:\USERS\LANE\DESKTOP\ALLFATHER_INJECTOR_SOURCE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/LANE/Desktop/allfather_injector_source -BC:/Users/LANE/Desktop/allfather_injector_source/build --check-stamp-file C:/Users/LANE/Desktop/allfather_injector_source/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
